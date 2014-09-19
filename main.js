@@ -23,9 +23,6 @@ var mainState = {
         // load audio
         game.load.audio('song', 'assets/song.mp3');
         
-        //play song
-        this.sound = this.game.add.audio('song');
-        this.sound.play();
     },
     
     create: function() {
@@ -39,6 +36,10 @@ var mainState = {
         
         // display woman
         this.woman = this.game.add.sprite(300, 240, 'woman');
+        
+        //play song
+        this.sound = this.game.add.audio('song');
+        this.sound.play();
         
         // set gravity
         game.physics.arcade.enable(this.bird);
@@ -133,6 +134,7 @@ var mainState = {
     // restart game
     restartGame: function(){
       // set to main state (start)
+      this.sound.stop();
       game.state.start('main');
     },
     
