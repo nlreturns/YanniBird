@@ -84,7 +84,7 @@ var mainState = {
         // Game logic
         
         // if collision with pipe, restart
-        //game.physics.arcade.overlap(this.bird, this.pipes, this.restartGame, null, this);
+        game.physics.arcade.overlap(this.bird, this.pipes, this.restartGame, null, this);
         
         // if out-of-bound, restart
         if (this.bird.inWorld == false)
