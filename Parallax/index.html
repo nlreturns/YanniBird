@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Parallax Scrolling</title>
+        <link href='http://fonts.googleapis.com/css?family=Convergence' rel='stylesheet' type='text/css'>
+            <link href="parallax.css" rel="stylesheet" type="text/css" />
+
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+            <script type="text/javascript" src="scripts/parallax.js"></script>
+            <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+            <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+            <script type="text/javascript" src="scripts/jquery.inview.js"></script>
+
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#nav').localScroll();
+                })
+            </script>
+    </head>
+
+    <body>
+
+        <ul id="nav">
+            <li><a href="#one" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+            <li><a href="#two" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+            <li><a href="#three" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+            <li><a href="#four" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+            <li><a href="#five" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+        </ul>
+
+        <div id="header">
+            <div class="content">
+                <h1>Waifus 'n stuff</h1>
+            </div> 
+        </div> 
+
+        <div id="one">
+            <div class="content">
+                <div class="left">
+                    <h2>Chapter 1 - Origins</h2>
+                    <p>Once upon a time, in the very wealthy country, the Netherlands, there lived a chap. This was no ordinary chap. No, dear reader, this was Yaya.</p>
+                </div>
+                <div class="right">
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>Yaya was very interested in japanese Animé, especially a very specific one...</p>
+                </div>
+            </div> 
+        </div> 
+
+        <div id="two">
+            <div class="content"><div class="bg"></div>
+                <div class="right">
+                    <h2>Chapter 2 - Love</h2>
+                    <p>Yaya loved the series 'Sakurasou no pet na kanojo', you could say he'd "Watch it for the plot". He was very intrigued by the character development, but the main reason to follow this animé would be Mashiro.</p>
+                    <p>All night he would be busy making art or re-watching episodes featuring Mashiro. Her being a chick is what interested him most. </p>
+                </div>
+            </div> 
+
+        </div> 
+
+        <div id="three">
+            <div class="content">
+                <div class="left">
+                    <h2>Chapter 3 - Jealousy</h2>
+                    <p>Unluckily, Mashiro had other interests. She fell in love with Sorata, which hurt Yaya's feelings. He swore to himself that one day, Mashiro would be his.</p>
+                </div>
+            </div> 
+        </div> 
+
+        <div id="four">
+            <div class="content">
+                <div class="left">
+                    <h2>Different Backgrounds</h2>
+                    <p>A slightly different way of doing it here using multiple CSS backgrounds. This has three layers as oppossed to two in other section giving a feeling of greater depth.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+                </div>
+            </div> 
+        </div> 
+
+        <div id="five">
+            <div class="content">
+                <h2>You've reached the end of the page</h2>
+                <p>You've scrolled to the end and you have seen the entire site appear on one page.</p>
+                <p>Probably not a good idea to use this for a lot of content otherwise it will be sluggish.</p>
+            </div> 
+        </div> 
+
+    </body>
+</html>
